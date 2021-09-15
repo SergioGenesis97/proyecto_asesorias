@@ -25,15 +25,15 @@ Coded by www.creative-tim.com
         @yield('title')
     </title>
 
-    <link rel="stylesheet" href="./../../../../public/css/estilos.css">
+    <link rel="stylesheet" href="./../../../css/estilos.css">
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no'
         name='viewport' />
     <!--     Fonts and icons     -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
     <!-- CSS Files -->
-    <link href="../../../../public/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="../../../../public/css/paper-dashboard.css?v=2.1.1" rel="stylesheet" />
+    <link href="./../../../css/bootstrap.min.css" rel="stylesheet" />
+    <link href="./../../../css/paper-dashboard.css?v=2.1.1" rel="stylesheet" />
 
 </head>
 
