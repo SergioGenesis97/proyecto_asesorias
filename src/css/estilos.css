@@ -1,0 +1,20 @@
+.fila{
+    display: flex;
+    padding: 5px;
+}
+
+.columna{
+    width: 50%;
+    padding-right: 10px;
+}
+
+.input{
+    width: 100%;
+    border-radius: 5px;
+    border-color: darkblue;
+    border-style: solid;
+    border-width: 1px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    box-shadow: 1px 1px gray;
+}
