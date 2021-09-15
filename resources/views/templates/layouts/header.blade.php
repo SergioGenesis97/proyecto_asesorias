@@ -17,23 +17,23 @@ Coded by www.creative-tim.com
 
 <head>
     <meta charset="utf-8" />
-    <link rel="apple-touch-icon" sizes="76x76" href="../assets/img//apple-icon.png">
-    <link rel="icon" type="image/png" href="../assets/img//favicon.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./../../../../public/img//apple-icon.png">
+    <link rel="icon" type="image/png" href="./../../../../public/img//favicon.png">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     
     <title>
         Añadir Alumno
     </title>
 
-    <link rel="stylesheet" href="./../../src/css/estilos.css">
+    <link rel="stylesheet" href="./../../../../public/css/estilos.css">
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no'
         name='viewport' />
     <!--     Fonts and icons     -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
     <!-- CSS Files -->
-    <link href="./../../src/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="./../../src/css/paper-dashboard.css?v=2.1.1" rel="stylesheet" />
+    <link href="./../../../../public/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="./../../../../public/css/paper-dashboard.css?v=2.1.1" rel="stylesheet" />
 
 </head>
 
@@ -47,7 +47,7 @@ Coded by www.creative-tim.com
             <div class="logo">
                 <a href="https://www.creative-tim.com" class="simple-text logo-mini">
                     <div class="logo-image-small">
-                        <img src="./../../src/img/logo-small.png">
+                        <img src="./../../../../public/img/logo-small.png">
                     </div>
                     <!-- <p>CT</p> -->
                 </a>
@@ -61,7 +61,7 @@ Coded by www.creative-tim.com
             <div class="sidebar-wrapper">
                 <div class="user">
                     <div class="photo">
-                        <img src="./../../src/img/Escudo U de G.png" />
+                        <img src="./../../../../public/img/Escudo U de G.png" />
                     </div>
                     <div class="info">
                         <a data-toggle="collapse" href="#collapseExample" class="collapsed">
@@ -91,55 +91,55 @@ Coded by www.creative-tim.com
                 </div>
                 <ul class="nav">
                     <li class="active">
-                        <a href="./../../index.html">
+                        <a href="./../../index.blade.php">
                             <i class="nc-icon nc-bank"></i>
                             <p>Home</p>
                         </a>
                     </li>
                     <li>
-                        <a href="./../alumnos/show.html">
+                        <a href="./../alumnos/show.blade.php">
                             <i class="nc-icon nc-book-bookmark"></i>
                             <p>Mostrar Alumnos</p>
                         </a>
                     </li>
                     <li>
-                        <a href="./../alumnos/create.html">
+                        <a href="./../alumnos/create.blade.php">
                             <i class="nc-icon nc-ruler-pencil"></i>
                             <p>Añadir Alumnos</p>
                         </a>
                     </li>
                     <li>
-                        <a href="./../asesorias/show.html">
+                        <a href="./../asesorias/show.blade.php">
                             <i class="nc-icon nc-book-bookmark"></i>
                             <p>Mostrar Asesorias</p>
                         </a>
                     </li>
                     <li>
-                        <a href="./../asesorias/create.html">
+                        <a href="./../asesorias/create.blade.php">
                             <i class="nc-icon nc-ruler-pencil"></i>
                             <p>Añadir Asesorias</p>
                         </a>
                     </li>
                     <li>
-                        <a href="./../horario/show.html">
+                        <a href="./../horario/show.blade.php">
                             <i class="nc-icon nc-calendar-60"></i>
                             <p>horario</p>
                         </a>
                     </li>
                     <li>
-                        <a href="./../materias/show.html">
+                        <a href="./../materias/show.blade.php">
                             <i class="nc-icon nc-book-bookmark"></i>
                             <p>Mostrar Materias</p>
                         </a>
                     </li>
                     <li>
-                        <a href="./../profesores/create.html">
+                        <a href="./../profesores/create.blade.php">
                             <i class="nc-icon nc-ruler-pencil"></i>
                             <p>Añadir Profesores</p>
                         </a>
                     </li>
                     <li>
-                        <a href="./../profesores/show.html">
+                        <a href="./../profesores/show.blade.php">
                             <i class="nc-icon nc-book-bookmark"></i>
                             <p>Mostrar Profesores</p>
                         </a>
