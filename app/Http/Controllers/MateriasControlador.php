@@ -6,5 +6,7 @@ use Illuminate\Http\Request;
 
 class MateriasControlador extends Controller
 {
-    //
+    public function show(){
+        return view('templates.materias.show');
+    }
 }
