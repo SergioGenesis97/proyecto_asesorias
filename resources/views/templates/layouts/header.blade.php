@@ -92,55 +92,55 @@ Coded by www.creative-tim.com
                 </div>
                 <ul class="nav">
                     <li class="active">
-                        <a href="./../../index.blade.php">
+                        <a href="./../../">
                             <i class="nc-icon nc-bank"></i>
                             <p>Home</p>
                         </a>
                     </li>
                     <li>
-                        <a href="./../alumnos/show.blade.php">
+                        <a href="./../alumnos/show">
                             <i class="nc-icon nc-book-bookmark"></i>
                             <p>Mostrar Alumnos</p>
                         </a>
                     </li>
                     <li>
-                        <a href="./../alumnos/create.blade.php">
+                        <a href="./../alumnos/create">
                             <i class="nc-icon nc-ruler-pencil"></i>
                             <p>Añadir Alumnos</p>
                         </a>
                     </li>
                     <li>
-                        <a href="./../asesorias/show.blade.php">
+                        <a href="./../asesorias/show">
                             <i class="nc-icon nc-book-bookmark"></i>
                             <p>Mostrar Asesorias</p>
                         </a>
                     </li>
                     <li>
-                        <a href="./../asesorias/create.blade.php">
+                        <a href="./../asesorias/create">
                             <i class="nc-icon nc-ruler-pencil"></i>
                             <p>Añadir Asesorias</p>
                         </a>
                     </li>
                     <li>
-                        <a href="./../horario/show.blade.php">
+                        <a href="./../horario/show">
                             <i class="nc-icon nc-calendar-60"></i>
                             <p>horario</p>
                         </a>
                     </li>
                     <li>
-                        <a href="./../materias/show.blade.php">
+                        <a href="./../materias/show">
                             <i class="nc-icon nc-book-bookmark"></i>
                             <p>Mostrar Materias</p>
                         </a>
                     </li>
                     <li>
-                        <a href="./../profesores/create.blade.php">
+                        <a href="./../profesores/create">
                             <i class="nc-icon nc-ruler-pencil"></i>
                             <p>Añadir Profesores</p>
                         </a>
                     </li>
                     <li>
-                        <a href="./../profesores/show.blade.php">
+                        <a href="./../profesores/show">
                             <i class="nc-icon nc-book-bookmark"></i>
                             <p>Mostrar Profesores</p>
                         </a>
