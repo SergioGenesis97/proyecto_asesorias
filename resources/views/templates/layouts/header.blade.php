@@ -22,7 +22,7 @@ Coded by www.creative-tim.com
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     
     <title>
-        Añadir Alumno
+        @yield('title')
     </title>
 
     <link rel="stylesheet" href="./../../../../public/css/estilos.css">
@@ -32,12 +32,13 @@ Coded by www.creative-tim.com
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
     <!-- CSS Files -->
-    <link href="./../../../../public/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="./../../../../public/css/paper-dashboard.css?v=2.1.1" rel="stylesheet" />
+    <link href="../../../../public/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../../../public/css/paper-dashboard.css?v=2.1.1" rel="stylesheet" />
 
 </head>
 
 <body class="">
+
     <div class="wrapper ">
         <div class="sidebar" data-color="default" data-active-color="primary">
         <!--
@@ -215,4 +216,6 @@ Coded by www.creative-tim.com
                 </div>
             </nav>
             <!-- End Navbar -->
+
+            @yield('content')
 

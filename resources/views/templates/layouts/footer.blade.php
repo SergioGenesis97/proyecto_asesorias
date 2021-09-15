@@ -23,6 +23,8 @@
             </footer>
         </div>
     </div>
+    <!-- END WRAPER -->
+
     <!--   Core JS Files   -->
     <script src="./../../../../public/js/core/jquery.min.js"></script>
     <script src="./../../../../public/js/core/popper.min.js"></script>
