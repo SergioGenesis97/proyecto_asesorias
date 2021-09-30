@@ -14,7 +14,9 @@ class CreateCarreraTable extends Migration
     public function up()
     {
         Schema::create('carrera', function (Blueprint $table) {
-            $table->id();
+            $table->id('id_carrera');
+            $table->string('codigo_carrera');
+            $table->string('nombre');
             $table->timestamps();
         });
     }

@@ -14,7 +14,10 @@ class CreateAsesoriasTable extends Migration
     public function up()
     {
         Schema::create('asesorias', function (Blueprint $table) {
-            $table->id();
+            $table->id('id_asesorias');
+            $table->string('tema');
+            $table->string('estatus');
+            $table->string('comentarios');
             $table->timestamps();
         });
     }
