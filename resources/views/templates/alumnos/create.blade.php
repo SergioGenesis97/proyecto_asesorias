@@ -12,7 +12,7 @@
 
                 <div>
                     <fieldset>
-                        <form action="#" method="get">
+                        <form action="#" method="get" id="RegisterValidation">
 
                             <div class="fila">  <!-- FILA -->
                                 <div class="columna">   <!-- COLUMNA -->
@@ -21,7 +21,7 @@
                                     </div>
                                     <div>
                                         <input class="input form-control" type="text" id="codEstudiante"
-                                               placeholder="Codigo">
+                                               placeholder="Codigo" required="true">
                                     </div>
                                 </div>
 
@@ -31,7 +31,7 @@
                                     </div>
                                     <div>
                                         <input class="input form-control" type="text" id="nombre"
-                                               placeholder="Nombre">
+                                               placeholder="Nombre" required="true">
                                     </div>
                                 </div>
                             </div>
@@ -43,7 +43,7 @@
                                     </div>
                                     <div>
                                         <input class="input form-control" type="text" id="apellPat"
-                                               placeholder="Apellido paterno">
+                                               placeholder="Apellido paterno" required="true">
                                     </div>
                                 </div>
 
@@ -53,7 +53,7 @@
                                     </div>
                                     <div>
                                         <input class="input form-control" type="text" id="apellMat"
-                                               placeholder="Apellido materno">
+                                               placeholder="Apellido materno" required="true">
                                     </div>
                                 </div>
                             </div> <!-- END FILA -->
@@ -65,7 +65,7 @@
                                     </div>
                                     <div>
                                         <input class="input form-control" type="text" id="correo"
-                                               placeholder="Correo">
+                                               placeholder="Correo" required="true">
                                     </div>
                                 </div>
 
@@ -74,7 +74,7 @@
                                         <label for="semestre">Semestre actual:</label>
                                     </div>
                                     <div>
-                                        <select class="input form-control" name="semestre" id="semestre">
+                                        <select class="input form-control" name="semestre" id="semestre" required="true">
                                             <option value="">Selecciona tu semestre</option>
                                             <option value="1">1</option>
                                             <option value="2">2</option>

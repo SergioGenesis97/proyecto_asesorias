@@ -12,7 +12,7 @@
 
                 <div>
                     <fieldset>
-                        <form action="#" method="get">
+                        <form action="#" method="get" id="RegisterValidation">
 
                             <div class="fila">  <!-- FILA -->
                                 <div class="columna">   <!-- COLUMNA -->
@@ -21,7 +21,7 @@
                                     </div>
                                     <div>
                                         <input class="input form-control" type="text" id="tema"
-                                               placeholder="Tema">
+                                               placeholder="Tema" required="true">
                                     </div>
                                 </div>
 
@@ -31,7 +31,7 @@
                                     </div>
                                     <div>
                                         <input class="input form-control" type="text" id="status"
-                                               placeholder="Estatus">
+                                               placeholder="Estatus" required="true">
                                     </div>
                                 </div>
                             </div>
