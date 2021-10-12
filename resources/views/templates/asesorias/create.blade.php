@@ -20,7 +20,7 @@
                                         <label for="tema">Tema de la asesoria: </label>
                                     </div>
                                     <div>
-                                        <input class="input" type="text" id="tema"
+                                        <input class="input form-control" type="text" id="tema"
                                                placeholder="Tema">
                                     </div>
                                 </div>
@@ -30,7 +30,7 @@
                                         <label for="status">Estatus:</label>
                                     </div>
                                     <div>
-                                        <input class="input" type="text" id="status"
+                                        <input class="input form-control" type="text" id="status"
                                                placeholder="Estatus">
                                     </div>
                                 </div>
@@ -43,7 +43,7 @@
                                     </div>
                                     <div>
                                         <textarea name="comment" id="comment"
-                                                  class="input"
+                                                  class="input form-control"
                                                   cols="30" rows="10"
                                                   placeholder="Escriba aquí sus Comentarios"></textarea>
                                     </div>

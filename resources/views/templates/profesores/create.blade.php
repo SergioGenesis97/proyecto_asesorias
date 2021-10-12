@@ -20,7 +20,7 @@
                                         <label for="codProf">Codigo del profesor: </label>
                                     </div>
                                     <div>
-                                        <input class="input" type="text" id="codProf"
+                                        <input class="input form-control" type="text" id="codProf"
                                                placeholder="Codigo">
                                     </div>
                                 </div>
@@ -30,7 +30,7 @@
                                         <label for="nombre">Nombre:</label>
                                     </div>
                                     <div>
-                                        <input class="input" type="text" id="nombre"
+                                        <input class="input form-control" type="text" id="nombre"
                                                placeholder="Nombre">
                                     </div>
                                 </div>
@@ -42,7 +42,7 @@
                                         <label for="apellPat">Apellido Paterno:</label>
                                     </div>
                                     <div>
-                                        <input class="input" type="text" id="apellPat"
+                                        <input class="input form-control" type="text" id="apellPat"
                                                placeholder="Apellido paterno">
                                     </div>
                                 </div>
@@ -52,7 +52,7 @@
                                         <label for="apellMat">Apellido Materno:</label>
                                     </div>
                                     <div>
-                                        <input class="input" type="text" id="apellMat"
+                                        <input class="input form-control" type="text" id="apellMat"
                                                placeholder="Apellido materno">
                                     </div>
                                 </div>
@@ -64,7 +64,7 @@
                                         <label for="correo">Correo Institucional:</label>
                                     </div>
                                     <div>
-                                        <input class="input" type="text" id="correo"
+                                        <input class="input form-control" type="text" id="correo"
                                                placeholder="Correo">
                                     </div>
                                 </div>
@@ -73,7 +73,7 @@
                                         <label for="ubicacion">Ubicación:</label>
                                     </div>
                                     <div>
-                                        <input class="input" type="text" id="ubicacion"
+                                        <input class="input form-control" type="text" id="ubicacion"
                                                placeholder="Ubicación">
                                     </div>
                                     
@@ -83,7 +83,7 @@
                                         <label for="especialidad">Especialidad:</label>
                                     </div>
                                     <div>
-                                        <input class="input" type="text" id="especialidad"
+                                        <input class="input form-control" type="text" id="especialidad"
                                                placeholder="Especialidad">
                                     </div>
                                     

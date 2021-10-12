@@ -20,7 +20,7 @@
                                         <label for="codEstudiante">Codigo del estudiante: </label>
                                     </div>
                                     <div>
-                                        <input class="input" type="text" id="codEstudiante"
+                                        <input class="input form-control" type="text" id="codEstudiante"
                                                placeholder="Codigo">
                                     </div>
                                 </div>
@@ -30,7 +30,7 @@
                                         <label for="nombre">Nombre:</label>
                                     </div>
                                     <div>
-                                        <input class="input" type="text" id="nombre"
+                                        <input class="input form-control" type="text" id="nombre"
                                                placeholder="Nombre">
                                     </div>
                                 </div>
@@ -42,7 +42,7 @@
                                         <label for="apellPat">Apellido Paterno:</label>
                                     </div>
                                     <div>
-                                        <input class="input" type="text" id="apellPat"
+                                        <input class="input form-control" type="text" id="apellPat"
                                                placeholder="Apellido paterno">
                                     </div>
                                 </div>
@@ -52,7 +52,7 @@
                                         <label for="apellMat">Apellido Materno:</label>
                                     </div>
                                     <div>
-                                        <input class="input" type="text" id="apellMat"
+                                        <input class="input form-control" type="text" id="apellMat"
                                                placeholder="Apellido materno">
                                     </div>
                                 </div>
@@ -64,7 +64,7 @@
                                         <label for="correo">Correo Institucional:</label>
                                     </div>
                                     <div>
-                                        <input class="input" type="text" id="correo"
+                                        <input class="input form-control" type="text" id="correo"
                                                placeholder="Correo">
                                     </div>
                                 </div>
@@ -74,7 +74,7 @@
                                         <label for="semestre">Semestre actual:</label>
                                     </div>
                                     <div>
-                                        <select class="input" name="semestre" id="semestre">
+                                        <select class="input form-control" name="semestre" id="semestre">
                                             <option value="">Selecciona tu semestre</option>
                                             <option value="1">1</option>
                                             <option value="2">2</option>
@@ -91,7 +91,6 @@
                             </div> <!-- END FILA -->
 
                             <div class="fila">   <!-- FILA -->
-
                                 <div>   <!-- COLUMNA -->
                                     <input class="btn btn-success btn-round"
                                            type="submit"
@@ -107,14 +106,10 @@
                                            value="Cancelar">
 
                                 </div>  <!-- END COLUMNA -->
-
                             </div>  <!-- END FILA-->
-
                         </form>
-
                     </fieldset>
                 </div>
-
             </div>
             <!-- End Content -->
 
