@@ -111,7 +111,9 @@
                             </div>  <!-- END FILA-->
 
                         </form>
-
+                        <script type="text/javascript">
+                            $("#RegisterValidation").validate();
+                        </script>
                     </fieldset>
                 </div>
 
