@@ -40,7 +40,7 @@ Coded by www.creative-tim.com
 <body class="">
 
     <div class="wrapper ">
-        <div class="sidebar" data-color="default" data-active-color="primary">
+        <div class="sidebar" data-color="black" data-active-color="info">
         <!--
             Tip 1: You can change the color of the sidebar using: 
             data-color=" default | primary | info | success | warning | danger |"
@@ -48,7 +48,7 @@ Coded by www.creative-tim.com
             <div class="logo">
                 <a href="https://www.creative-tim.com" class="simple-text logo-mini">
                     <div class="logo-image-small">
-                        <img src="./../../../img/logo-small.png">
+                        <img src="./../../../img/Escudo U de G.png">
                     </div>
                     <!-- <p>CT</p> -->
                 </a>
@@ -90,69 +90,106 @@ Coded by www.creative-tim.com
                         </div>
                     </div>
                 </div>
+                <!-- Nav-Menu -->
                 <ul class="nav">
-                    <li class="active">
+                    <li>
                         <a href="./../../">
-                            <i class="nc-icon nc-bank"></i>
-                            <p>Home</p>
+                            <i class="nc-icon nc-bank text-warning"></i>
+                            <p class="text-white">Home</p>
                         </a>
                     </li>
                     <li>
-                        <a href="./../alumnos/show">
-                            <i class="nc-icon nc-book-bookmark"></i>
-                            <p>Mostrar Alumnos</p>
+                        <a data-toggle="collapse" href="#alumnos">
+                            <i class="nc-icon nc-book-bookmark text-warning"></i>
+                            <p class="text-white">
+                                Alumnos <b class="caret"></b>
+                            </p>
                         </a>
-                    </li>
+                        <div class="collapse " id="alumnos">
+                            <ul class="nav">
+                                <li>
+                                    <a href="./../alumnos/show">
+                                        <span class="sidebar-mini-icon nc-icon nc-single-02"></span>
+                                        <span class="sidebar-normal"> Mostrar Alumnos </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./../alumnos/create">
+                                        <span class="sidebar-mini-icon nc-icon nc-simple-add"></span>   
+                                        <span class="sidebar-normal"> Agregar Alumnos </span>
+                                    </a>
+                                </li>
+                            </ul><!-- ./nav -->
+                        </div><!-- ./collapse -->
+                    </li><!-- ./active -->
                     <li>
-                        <a href="./../alumnos/create">
-                            <i class="nc-icon nc-ruler-pencil"></i>
-                            <p>Añadir Alumnos</p>
+                        <a data-toggle="collapse" href="#asesorias">
+                            <i class="nc-icon nc-vector text-warning"></i>
+                            <p class="text-white">
+                                Asesorias <b class="caret"></b>
+                            </p>
                         </a>
-                    </li>
+                        <div class="collapse " id="asesorias">
+                            <ul class="nav">
+                                <li>
+                                    <a href="./../asesorias/show">
+                                        <span class="sidebar-mini-icon nc-icon nc-layout-11"></span>
+                                        <span class="sidebar-normal"> Mostrar Asesorias </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./../asesorias/create">
+                                        <span class="sidebar-mini-icon nc-icon nc-simple-add"></span>
+                                        <span class="sidebar-normal"> Agregar Asesorias </span>
+                                    </a>
+                                </li>
+                            </ul><!-- ./nav -->
+                        </div><!-- ./collapse -->
+                    </li><!-- ./active -->
                     <li>
-                        <a href="./../asesorias/show">
-                            <i class="nc-icon nc-book-bookmark"></i>
-                            <p>Mostrar Asesorias</p>
+                        <a data-toggle="collapse" href="#prof">
+                            <i class="nc-icon nc-ruler-pencil text-warning"></i>
+                            <p class="text-white">
+                                Profesores <b class="caret"></b>
+                            </p>
                         </a>
-                    </li>
-                    <li>
-                        <a href="./../asesorias/create">
-                            <i class="nc-icon nc-ruler-pencil"></i>
-                            <p>Añadir Asesorias</p>
-                        </a>
-                    </li>
+                        <div class="collapse " id="prof">
+                            <ul class="nav">
+                                <li>
+                                    <a href="./../profesores/show">
+                                        <span class="sidebar-mini-icon nc-icon nc-single-02"></span>
+                                        <span class="sidebar-normal"> Mostrar Profesores </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./../profesores/create">
+                                        <span class="sidebar-mini-icon nc-icon nc-simple-add"></span>
+                                        <span class="sidebar-normal"> Agregar Profesores </span>
+                                    </a>
+                                </li>
+                            </ul><!-- ./nav -->
+                        </div><!-- ./collapse -->
+                    </li><!-- ./active -->
                     <li>
                         <a href="./../horario/show">
-                            <i class="nc-icon nc-calendar-60"></i>
-                            <p>horario</p>
+                            <i class="nc-icon nc-calendar-60 text-warning"></i>
+                            <p class="text-white">horario</p>
                         </a>
                     </li>
                     <li>
                         <a href="./../materias/show">
-                            <i class="nc-icon nc-book-bookmark"></i>
-                            <p>Mostrar Materias</p>
+                            <i class="nc-icon nc-single-copy-04 text-warning"></i>
+                            <p class="text-white">Mostrar Materias</p>
                         </a>
                     </li>
-                    <li>
-                        <a href="./../profesores/create">
-                            <i class="nc-icon nc-ruler-pencil"></i>
-                            <p>Añadir Profesores</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="./../profesores/show">
-                            <i class="nc-icon nc-book-bookmark"></i>
-                            <p>Mostrar Profesores</p>
-                        </a>
-                    </li>
-                </ul>
+                </ul><!-- ./Nav-Menu -->
             </div>
         </div>
 
         <div class="main-panel">
 
             <!-- Navbar -->
-            <nav class="navbar navbar-expand-lg navbar-absolute fixed-top navbar-transparent">
+            <nav class="navbar navbar-expand-lg navbar-absolute fixed-top bg-dark">
                 <div class="container-fluid">
                     <div class="navbar-wrapper">
                         <div class="navbar-minimize">
@@ -168,7 +205,7 @@ Coded by www.creative-tim.com
                                 <span class="navbar-toggler-bar bar3"></span>
                             </button>
                         </div>
-                        <a class="navbar-brand" href="javascript:;">Control de asesorias del CUValles</a>
+                        <a class="navbar-brand text-warning" href="javascript:;">Control de asesorias del CUValles</a>
                     </div>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
                         aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
@@ -179,10 +216,10 @@ Coded by www.creative-tim.com
                     <div class="collapse navbar-collapse justify-content-end" id="navigation">
                         <form>
                             <div class="input-group no-border">
-                                <input type="text" value="" class="form-control" placeholder="Search...">
+                                <input type="text" value="" class="form-control text-white" placeholder="Search...">
                                 <div class="input-group-append">
                                     <div class="input-group-text">
-                                        <i class="nc-icon nc-zoom-split"></i>
+                                        <i class="nc-icon nc-zoom-split text-warning"></i>
                                     </div>
                                 </div>
                             </div>
