@@ -1,6 +1,6 @@
 @extends('templates.layouts.footer')
 
-@section('title', 'Añadir Alumno')
+@section('title', 'Horario')
 
 @section('content')
 

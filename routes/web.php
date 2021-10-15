@@ -19,18 +19,21 @@ use App\Http\Controllers\ProfesoresControlador;
 |
 */
 
+/*-------------------------------------------------------------------------------------------------------------------------*/
+/*                                          ******  VIEWS *******                                            */
+
 /*  HOME  */
 Route::get('/', [HomeControlador::class, 'index']);
 
 
 /*  ALUMNOS  */
-Route::get('templates/alumnos/create', [AlumnosControlador::class, 'create']);
-Route::get('templates/alumnos/show', [AlumnosControlador::class, 'show']);
+Route::get('templates/alumnos/create', [AlumnosControlador::class, 'create'])->name('alumnos.create');
+Route::get('templates/alumnos/show', [AlumnosControlador::class, 'show'])->name('alumnos.show');
 
 
 /*  ASESORIAS  */
-Route::get('templates/asesorias/create', [AsesoriasControlador::class, 'create']);
-Route::get('templates/asesorias/show', [AsesoriasControlador::class, 'show']);
+Route::get('templates/asesorias/create', [AsesoriasControlador::class, 'create'])->name('asesorias.create');
+Route::get('templates/asesorias/show', [AsesoriasControlador::class, 'show'])->name('asesorias.show');
 
 
 /*  HORARIO  */
@@ -42,5 +45,18 @@ Route::get('templates/materias/show', [MateriasControlador::class, 'show']);
 
 
 /*  PROFESORES  */
-Route::get('templates/profesores/create', [ProfesoresControlador::class, 'create']);
-Route::get('templates/profesores/show', [ProfesoresControlador::class, 'show']);
+Route::get('templates/profesores/create', [ProfesoresControlador::class, 'create'])->name('profesores.create');
+Route::get('templates/profesores/show', [ProfesoresControlador::class, 'show'])->name('profesores.show');
+
+
+/*-------------------------------------------------------------------------------------------------------------------------*/
+/*                                         ******  METODOS *******                                     */
+
+/*  Guardar Alumnos */
+Route::post('templates/alumnos/create', [AlumnosControlador::class, 'store'])->name('alumnos.store');
+
+/*  Guardar Asesorias */
+Route::post('templates/asesorias/create', [AsesoriasControlador::class, 'store'])->name('asesorias.store');
+
+/*  Guardar Profesores */
+Route::post('templates/profesores/create', [ProfesoresControlador::class, 'store'])->name('profesores.store');
