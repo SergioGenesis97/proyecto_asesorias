@@ -24,8 +24,15 @@
                                                 <label class="text-dark" for="codEstudiante">Codigo del estudiante: </label>
                                             </div>
                                             <div>
-                                                <input class="input form-control" name="code" type="text" id="codEstudiante"
-                                                       placeholder="Codigo" required="true">
+                                                <input class="input form-control" name="codigo_estudiante" type="text" id="codEstudiante"
+                                                       placeholder="Codigo" required="true" value="{{ old('codigo_estudiante') }}">
+                                                
+                                                <!-- muestra los errores de las validaciones del AlumnosControlador en forma de if -->
+                                                @error('codigo_estudiante')
+                                                    <div class="alert alert-danger text-dark" role="alert">
+                                                        *{{ $message }}
+                                                    </div>
+                                                @enderror
                                             </div>
                                         </div>
         
@@ -35,7 +42,14 @@
                                             </div>
                                             <div>
                                                 <input class="input form-control" name="nombre" type="text" id="nombre"
-                                                       placeholder="Nombre" required="true">
+                                                       placeholder="Nombre" required="true" value="{{ old('nombre') }}">
+                                                
+                                                <!-- muestra los errores de las validaciones del AlumnosControlador en forma de if -->
+                                                @error('nombre')
+                                                    <div class="alert alert-danger text-dark" role="alert">
+                                                        *{{ $message }}
+                                                    </div>
+                                                @enderror
                                             </div>
                                         </div>
                                     </div>
@@ -47,7 +61,14 @@
                                             </div>
                                             <div>
                                                 <input class="input form-control" name="apellPat" type="text" id="apellPat"
-                                                       placeholder="Apellido paterno" required="true">
+                                                       placeholder="Apellido paterno" required="true" value="{{ old('apellPat') }}">
+                                                
+                                                <!-- muestra los errores de las validaciones del AlumnosControlador en forma de if -->
+                                                @error('apellPat')
+                                                    <div class="alert alert-danger text-dark" role="alert">
+                                                        *{{ $message }}
+                                                    </div>
+                                                @enderror
                                             </div>
                                         </div>
         
@@ -57,7 +78,14 @@
                                             </div>
                                             <div>
                                                 <input class="input form-control" name="apellMat" type="text" id="apellMat"
-                                                       placeholder="Apellido materno" required="true">
+                                                       placeholder="Apellido materno" required="true" value="{{ old('apellMat') }}">
+                                                
+                                                <!-- muestra los errores de las validaciones del AlumnosControlador en forma de if -->
+                                                @error('apellMat')
+                                                    <div class="alert alert-danger text-dark" role="alert">
+                                                        *{{ $message }}
+                                                    </div>
+                                                @enderror
                                             </div>
                                         </div>
                                     </div> <!-- END FILA -->
@@ -69,7 +97,14 @@
                                             </div>
                                             <div>
                                                 <input class="input form-control" name="correo" type="text" id="correo"
-                                                       placeholder="Correo" required="true">
+                                                       placeholder="Correo" required="true" value="{{ old('correo') }}">
+                                                
+                                                <!-- muestra los errores de las validaciones del AlumnosControlador en forma de if -->
+                                                @error('correo')
+                                                    <div class="alert alert-danger text-dark" role="alert">
+                                                        *{{ $message }}
+                                                    </div>
+                                                @enderror
                                             </div>
                                         </div>
         
@@ -80,16 +115,24 @@
                                             <div>
                                                 <select class="input form-control" name="semestre" id="semestre" required="true">
                                                     <option value="">Selecciona tu semestre</option>
-                                                    <option value="1">1</option>
-                                                    <option value="2">2</option>
-                                                    <option value="3">3</option>
-                                                    <option value="4">4</option>
-                                                    <option value="5">5</option>
-                                                    <option value="6">6</option>
-                                                    <option value="7">7</option>
-                                                    <option value="8">8</option>
-                                                    <option value="9">9</option>
+                                                    <option value="1" {{ old('semestre') == 1 ? 'selected' : '' }} >1</option>
+                                                    <option value="2" {{ old('semestre') == 2 ? 'selected' : '' }} >2</option>
+                                                    <option value="3" {{ old('semestre') == 3 ? 'selected' : '' }} >3</option>
+                                                    <option value="4" {{ old('semestre') == 4 ? 'selected' : '' }} >4</option>
+                                                    <option value="5" {{ old('semestre') == 5 ? 'selected' : '' }} >5</option>
+                                                    <option value="6" {{ old('semestre') == 6 ? 'selected' : '' }} >6</option>
+                                                    <option value="7" {{ old('semestre') == 7 ? 'selected' : '' }} >7</option>
+                                                    <option value="8" {{ old('semestre') == 8 ? 'selected' : '' }} >8</option>
+                                                    <option value="9" {{ old('semestre') == 9 ? 'selected' : '' }} >9 o &#43;</option>
+                                                    
                                                 </select>
+
+                                                <!-- muestra los errores de las validaciones del AlumnosControlador en forma de if -->
+                                                @error('semestre')
+                                                    <div class="alert alert-danger text-dark" role="alert">
+                                                        *{{ $message }}
+                                                    </div>
+                                                @enderror
                                             </div>
                                         </div>
                                     </div> <!-- END FILA -->

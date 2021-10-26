@@ -12,4 +12,5 @@ class alumnos extends Model
     protected $primaryKey = 'id_alumnos';
 
     protected $table = 'alumnos';
+    
 }
