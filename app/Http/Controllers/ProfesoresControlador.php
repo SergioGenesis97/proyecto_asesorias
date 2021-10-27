@@ -12,14 +12,27 @@ class ProfesoresControlador extends Controller
     }
 
     public function store(Request $request){
+
+        /* Realiza las validaciones antes de guardar en
+        la base de datos  */
+        $request->validate([
+            'codigo_profesor' => 'required|unique:profesores|int',
+            'nombre' => 'required|alpha',
+            'apell_pat' => 'required|alpha',
+            'apell_mat' => 'required|alpha',
+            'correo_institu' => 'required|email',
+            'ubicacion' => 'required|string',
+            'especialidad' => 'required|string'
+        ]);
+
         
         $profesores = new profesores();
 
-        $profesores->codigo_profesor = $request->codigo;
+        $profesores->codigo_profesor = $request->codigo_profesor;
         $profesores->nombre = $request->nombre;
         $profesores->apell_pat = $request->apell_pat;
         $profesores->apell_mat = $request->apell_mat;
-        $profesores->correo_institu = $request->correo;
+        $profesores->correo_institu = $request->correo_institu;
         $profesores->ubicacion = $request->ubicacion;
         $profesores->especialidad = $request->especialidad;
 

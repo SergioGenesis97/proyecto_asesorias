@@ -24,7 +24,14 @@
                                             </div>
                                             <div>
                                                 <input class="input form-control" type="text" id="codProf"
-                                                    placeholder="Codigo" name="codigo" required="true">
+                                                    placeholder="Codigo" name="codigo_profesor" required="true" value="{{ old('codigo_profesor') }}">
+
+                                                <!-- muestra los errores de las validaciones del ProfesorControlador en forma de if -->
+                                                @error('codigo_profesor')
+                                                    <div class="alert alert-danger text-dark" role="alert">
+                                                        {{ $message }}
+                                                    </div>
+                                                @enderror
                                             </div>
                                         </div>
         
@@ -34,7 +41,14 @@
                                             </div>
                                             <div>
                                                 <input class="input form-control" type="text" id="nombre"
-                                                    placeholder="Nombre" name="nombre" required="true">
+                                                    placeholder="Nombre" name="nombre" required="true" value="{{ old('nombre') }}">
+
+                                                <!-- muestra los errores de las validaciones del ProfesorControlador en forma de if -->
+                                                @error('nombre')
+                                                    <div class="alert alert-danger text-dark" role="alert">
+                                                        {{ $message }}
+                                                    </div>
+                                                @enderror
                                             </div>
                                         </div>
                                     </div>
@@ -46,7 +60,14 @@
                                             </div>
                                             <div>
                                                 <input class="input form-control" type="text" id="apellPat"
-                                                    placeholder="Apellido paterno" name="apell_pat" required="true">
+                                                    placeholder="Apellido paterno" name="apell_pat" required="true" value="{{ old('apell_pat') }}">
+ 
+                                                <!-- muestra los errores de las validaciones del ProfesorControlador en forma de if -->
+                                                @error('apell_pat')
+                                                    <div class="alert alert-danger text-dark" role="alert">
+                                                        {{ $message }}
+                                                    </div>
+                                                @enderror
                                             </div>
                                         </div>
         
@@ -56,7 +77,14 @@
                                             </div>
                                             <div>
                                                 <input class="input form-control" type="text" id="apellMat"
-                                                    placeholder="Apellido materno" name="apell_mat" required="true">
+                                                    placeholder="Apellido materno" name="apell_mat" required="true" value="{{ old('apell_mat') }}">
+                                                    
+                                                <!-- muestra los errores de las validaciones del ProfesorControlador en forma de if -->
+                                                @error('apell_mat')
+                                                    <div class="alert alert-danger text-dark" role="alert">
+                                                        {{ $message }}
+                                                    </div>
+                                                @enderror
                                             </div>
                                         </div>
                                     </div> <!-- END FILA -->
@@ -68,7 +96,14 @@
                                             </div>
                                             <div>
                                                 <input class="input form-control" type="text" id="correo"
-                                                    placeholder="Correo" name="correo" required="true">
+                                                    placeholder="Correo" name="correo_institu" required="true" value="{{ old('correo_institu') }}">
+                                                    
+                                                <!-- muestra los errores de las validaciones del ProfesorControlador en forma de if -->
+                                                @error('correo_institu')
+                                                <div class="alert alert-danger text-dark" role="alert">
+                                                    {{ $message }}
+                                                </div>
+                                            @enderror
                                             </div>
                                         </div>
                                         <div class="columna"> <!-- COLUMNA -->
@@ -77,7 +112,14 @@
                                             </div>
                                             <div>
                                                 <input class="input form-control" type="text" id="ubicacion"
-                                                    placeholder="Ubicación" name="ubicacion" required="true">
+                                                    placeholder="Ubicación" name="ubicacion" required="true" value="{{ old('ubicacion') }}">
+                                                    
+                                                <!-- muestra los errores de las validaciones del ProfesorControlador en forma de if -->
+                                                @error('ubicacion')
+                                                    <div class="alert alert-danger text-dark" role="alert">
+                                                        {{ $message }}
+                                                    </div>
+                                                @enderror
                                             </div>
                                             
                                         </div>
@@ -87,7 +129,14 @@
                                             </div>
                                             <div>
                                                 <input class="input form-control" type="text" id="especialidad"
-                                                    placeholder="Especialidad" name="especialidad" required="true">
+                                                    placeholder="Especialidad" name="especialidad" required="true" value="{{ old('especialidad') }}">
+                                                    
+                                                <!-- muestra los errores de las validaciones del ProfesorControlador en forma de if -->
+                                                @error('especialidad')
+                                                    <div class="alert alert-danger text-dark" role="alert">
+                                                        {{ $message }}
+                                                    </div>
+                                                @enderror
                                             </div>
                                             
                                         </div>
