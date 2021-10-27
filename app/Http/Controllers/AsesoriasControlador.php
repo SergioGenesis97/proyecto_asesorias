@@ -17,9 +17,9 @@ class AsesoriasControlador extends Controller
         /* Realiza las validaciones antes de guardar en
         la base de datos  */
         $request->validate([
-            'tema' => 'required',
+            'tema' => 'required|string|min:5',
             'estatus' => 'required',
-            'comentarios' => 'required|string|min:5'
+            'comentarios' => 'required|string|min:10|max:254'
         ]);
 
 
