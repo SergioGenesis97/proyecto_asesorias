@@ -14,11 +14,20 @@ class AsesoriasControlador extends Controller
 
     public function store(Request $request){
 
+        /* Realiza las validaciones antes de guardar en
+        la base de datos  */
+        $request->validate([
+            'tema' => 'required',
+            'estatus' => 'required',
+            'comentarios' => 'required|string|min:5'
+        ]);
+
+
         $asesoria = new asesorias();
 
         $asesoria->tema = $request->tema;
         $asesoria->estatus = $request->estatus;
-        $asesoria->comentarios = $request->comment;
+        $asesoria->comentarios = $request->comentarios;
 
         $asesoria->save();
 

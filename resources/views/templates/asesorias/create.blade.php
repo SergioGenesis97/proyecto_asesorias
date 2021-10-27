@@ -25,7 +25,14 @@
                                             </div>
                                             <div>
                                                 <input class="input form-control" type="text" id="tema"
-                                                       placeholder="Tema" name="tema" required="true">
+                                                       placeholder="Tema" name="tema" required="true" value="{{ old('tema') }}">
+
+                                                <!-- muestra los errores de las validaciones del AsesoriasControlador en forma de if -->
+                                                @error('tema')
+                                                    <div class="alert alert-danger text-dark" role="alert">
+                                                        *{{ $message }}
+                                                    </div>
+                                                @enderror
                                             </div>
                                         </div>
         
@@ -35,7 +42,14 @@
                                             </div>
                                             <div>
                                                 <input class="input form-control" type="text" id="status"
-                                                       placeholder="Estatus" name="estatus" required="true">
+                                                       placeholder="Estatus" name="estatus" required="true" value="{{ old('estatus') }}">
+                                                
+                                                <!-- muestra los errores de las validaciones del AsesoriasControlador en forma de if -->
+                                                @error('estatus')
+                                                    <div class="alert alert-danger text-dark" role="alert">
+                                                        *{{ $message }}
+                                                    </div>
+                                                @enderror
                                             </div>
                                         </div>
                                     </div>
@@ -46,10 +60,17 @@
                                                 <label class="text-dark" for="comment">Comentario:</label>
                                             </div>
                                             <div>
-                                                <textarea name="comment" id="comment"
+                                                <textarea name="comentarios" id="comment"
                                                           class="input form-control"
                                                           cols="30" rows="10"
-                                                          placeholder="Escriba aquí sus Comentarios"></textarea>
+                                                          placeholder="Escriba aquí sus Comentarios">{{ old('comentarios') }}</textarea>
+                                                
+                                                <!-- muestra los errores de las validaciones del AsesoriasControlador en forma de if -->
+                                                @error('comentarios')
+                                                    <div class="alert alert-danger text-dark" role="alert">
+                                                        *{{ $message }}
+                                                    </div>
+                                                @enderror
                                             </div>
                                         </div>
                                     </div> <!-- END FILA -->

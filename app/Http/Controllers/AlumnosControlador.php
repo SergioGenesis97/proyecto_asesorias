@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\alumnos;
 use Illuminate\Http\Request;
 
+
 class AlumnosControlador extends Controller
 {
     public function create(){
@@ -16,12 +17,12 @@ class AlumnosControlador extends Controller
         /* Realiza las validaciones antes de guardar en
            la base de datos  */
         $request->validate([
-            'codigo_estudiante' => 'required|unique:alumnos',
-            'nombre' => 'required',
-            'apellPat' => 'required',
-            'apellMat' => 'required',
-            'correo' => 'required',
-            'semestre' => 'required'
+            'codigo_estudiante' => 'required|unique:alumnos|int',
+            'nombre' => 'required|alpha',
+            'apellPat' => 'required|alpha',
+            'apellMat' => 'required|alpha',
+            'correo' => 'required|email',
+            'semestre' => 'required|int'
         ]);
 
         
